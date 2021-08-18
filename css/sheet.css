@@ -1,0 +1,386 @@
+
+/*box model y google font genérico*/
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}	
+html{
+	font-size: 62,5%;
+}
+/*fondo principal de la página*/
+body{
+	background-color: #F0B851;
+	line-height: 24px;
+	background-image: url("../img/BACK.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*fondo del logo*/
+.yellow{
+	background-color: #F7EE60;
+}
+/*medidas del logo*/
+#logoSection a img {
+	height: 70px;
+}
+/*botonera genérica*/
+nav ul{
+	background-color: #A8CAE9;
+	text-align: center;
+	word-spacing: 1rem;
+	height: 1.5rem;
+	margin-top: 0.7rem; 
+	margin-bottom: 0.7rem;
+	padding-bottom: 3px;
+}
+nav ul li {
+	color: white;
+	background-color: #A8CAE9;
+	font-size: 0.90rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-family: 'ABeeZee', sans-serif;
+	display:inline;
+	padding-top: 3px;
+	width: 50%;
+	text-align: center;
+}
+/*links*/
+			a{
+				color: white;
+				text-decoration: none;
+
+			}
+			a:hover{
+			color: grey;
+			text-decoration: underline;
+			}
+/*encabezado de home*/
+main header{
+	height: 25rem;
+	background-image: url(../img/home.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+
+/*encabezados principales de las páginas*/
+h1,h2,h3{
+	color: #F97307;
+}
+/*página de Home*/
+
+#describing article h3{
+	color: white;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	font-family: 'ABeeZee', sans-serif;
+	float: right;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 10px;
+	padding-right: 20px;
+}
+/*sección de favoritos*/
+
+.sizeSection {
+	height: 4rem;
+	width: 70rem;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 8rem;
+	padding-bottom: 10px;
+	
+}
+
+#favourite article h3{
+	font-size: 2rem;
+	text-align: center;
+	letter-spacing: 0.3rem;
+	word-spacing: 0.5rem;
+	color: black;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.sizeFavourite{
+	width: 70rem;
+	margin-left: 8rem;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.letterSize{
+	font-size: 1.5rem;
+}
+/*FLEXBOX en inicio y en el Shop*/
+.justifyContent{
+	display:flex;
+}
+.justifyItem{
+	justify-content: space-between;
+	align-items: center;
+}
+.flexGrow{
+	flex-grow:1; 
+}
+.flexOrder2{
+	order: 2;
+}
+.flexOrder3{
+	order: 3;
+}
+.flexOrder1{
+	order:1;
+}
+.flexDirection{
+	flex-direction: column;
+	height: 17rem;
+	flex-basis: 5rem;
+
+}
+/*sección de comentarios*/
+
+.sizeComents{
+	height: 20rem;
+	background-color: #F0B851;
+	margin-top: 20px;  
+}
+.contentComents{
+	padding: 60px;
+}
+#titleNice article h4{
+	letter-spacing: 0.2rem;
+	word-spacing: 0.2rem;
+	background-color: #F0B851;
+	font-family: 'ABeeZee', sans-serif;
+	padding-top: 20px;
+}
+/*párrafos genéricos y colores de textos y fondo de todas las páginas*/
+p{
+	color: black;
+	font-size: 1.2rem;
+	background-color: #F0B851;
+}
+		span{
+			letter-spacing: 0.1rem;
+		}
+.grey{
+	color: grey;
+}
+.black{
+	color:black;
+}
+.orange{
+	color:#F97307;
+}
+.backgroundBlue{
+	background-color: #A8CAE9;
+}
+.backgroundOrange{
+	background-color: #F0B851;
+}
+.backgroundWhite{
+	background-color: white;
+}
+.backgorundPink{
+	background-color: #EDB5B5;
+}
+.backgroundLightblue{
+	background-color: #A3AECF;
+}
+
+.lightorange{
+	background-color: #F0B851;
+}
+/*letras itálicas, negritas y google font genéricas*/
+.italicLetter{
+	font-style: italic;
+}
+.fontFamily{
+	font-family: 'ABeeZee', sans-serif;
+}
+.boldLetter{
+	font-weight: bold;
+}
+/*ubicación central de texto general*/
+.textAline{
+	text-align: center;
+}
+/*MAYÚSCULAS GENERAL*/
+.textMay{
+	text-transform: uppercase;
+}
+/*footer genérico*/
+footer{
+	background-color: #F6B26B;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*tabla de la sección 4*/
+table{
+	color: white; 
+	margin-left: 30px;
+	margin-top: 25px;
+	width: 20rem;
+	margin-bottom: 25px;
+}
+		table tbody tr td ul li {
+			list-style-type: circle;
+			margin-left: 32px;
+		}
+			table tbody tr  td ol li {
+				margin-left: 32px;
+			}
+/*sección about*/
+#sizeStudio{
+	height: 25rem;
+	background-color: orange;
+
+}
+#bigLetter article h3{
+	font-size: 3rem;
+	line-height: 70px;
+	margin-top: 30px;
+	padding-top: 20px;
+	margin-left: 25rem;
+}
+.imgSize{
+	margin-left: 30rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.headerAbout{
+	margin-left: 32rem;
+	border-radius: 500px;
+}
+
+.sizeDescribe{
+	background-color: black;
+}
+#describeOfus article h3{
+	color: orange;
+	float: right;
+	font-family: 'ABeeZee', sans-serif;
+	font-size: 2rem;
+}
+
+#studioDescribe article p{
+	background-color: #A8CAE9;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+/*sección how to use*/
+#title h2{
+	color: black;
+	font-size: 3rem;
+	line-height: 70px;
+	text-align: center;
+}
+.sizeUse{
+	margin:20px;
+}
+.useInstructions{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding:20px;
+}
+.margenForm{
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+}
+.sizePubli{
+	margin-top: 20px;
+}
+/*sección shop*/
+#header{
+	line-height: 50px;
+	font-size: 2rem;
+
+}
+		#shop{
+			font-size: 1rem; 
+			line-height: 30px;
+			font-family: 'ABeeZee', sans-serif;
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+		.sizeSuscribe{
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-style: solid;
+			border-color: grey;
+			width: 20rem;
+			margin-left:30rem;
+		}
+/*sección de formulario de contacto*/
+}
+#buttoner5 ul{
+	padding-bottom: 3px;
+}
+#buttoner5 ul li a{
+	background-color: white;
+	text-align: center;
+	word-spacing: 1rem;
+	margin-top: 0.7rem; 
+	margin-bottom: 0.7rem;
+}
+#titlecontact{
+	grid-area: encabezado;
+}
+#titlecontact section article h2{
+	font-size: 4rem;
+	line-height: 50px;
+	color: black;
+	padding-top: 20px;
+}
+#subtitlecontact {
+	font-size: 1.5rem;
+	line-height: 50px;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+#letstalk article h3 {
+	text-decoration: underline;
+	font-size: 1.5rem;
+	padding-bottom: 20px;
+}
+.designForm{
+	margin-bottom: 20px;
+}
+
+/*APLICO GRIDS AL LA HOJA DE CONTACTO*/
+.grid{
+	display: grid;
+}
+.grid-template-area{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 12vh 8vh 20vh 115vh 22vh;
+	grid-template-areas: "logo logo" "nav nav" "encabezado none" "form none" "pie pie";
+}
+#logoSection{
+	grid-area: logo;
+}
+#buttoner5{
+	grid-area: nav;
+}
+#letstalk{
+	grid-area: form;
+}
+#pie{
+	grid-area: pie;
+}

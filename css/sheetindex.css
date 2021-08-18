@@ -1,0 +1,257 @@
+/*box model y google font genérico*/
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}	
+html{
+	font-size: 62,5%;
+}
+/*fondo principal de la página*/
+body{
+	background-color: #F0B851;
+	line-height: 24px;
+	background-image: url("../img/BACK.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*fondo del logo*/
+.yellow{
+	background-color: #F7EE60;
+}
+/*medidas del logo*/
+#logoSection a img {
+	height: 70px;
+}
+/*botonera genérica*/
+nav ul{
+	background-color: #A8CAE9;
+	text-align: center;
+	word-spacing: 1rem;
+	margin-top: 0.5rem; 
+	margin-bottom: 0.7rem;
+	padding-bottom: 3px;
+}
+nav ul li {
+	color: white;
+	background-color: #A8CAE9;
+	font-size: 0.90rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-family: 'ABeeZee', sans-serif;
+	display:inline;
+	padding-top: 3px;
+	text-align: center;
+}
+/*links*/
+			a{
+				color: white;
+				text-decoration: none;
+
+			}
+			a:hover{
+			color: grey;
+			text-decoration: underline;
+			}
+/*encabezado de home*/
+#header{
+	background-image: url(../img/rainbow2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 65px;
+	margin-bottom: 15px;
+}
+
+
+/*encabezados principales de las páginas*/
+h1,h2,h3{
+	color: #F97307;
+}
+/*página de Home*/
+/*sección de favoritos*/
+
+.sizeSection {
+	margin-top: 2px;
+	margin-left: 1rem;
+	padding-bottom: 10px;
+	width: 66.1vh;
+}
+
+#favourite article h3{
+	font-size: 2rem;
+	text-align: center;
+	letter-spacing: 0.3rem;
+	word-spacing: 0.5rem;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.sizeFavourite{
+	margin-left: 1rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-right: 1rem;
+}
+
+.letterSize{
+	font-size: 1.5rem;
+}
+
+/*sección de comentarios*/
+
+.sizeComents{
+	background-color: #F0B851;
+	margin-top:10px;  
+}
+.contentComents{
+	padding: 40px;
+}
+#titleNice article h4{
+	letter-spacing: 0.2rem;
+	word-spacing: 0.2rem;
+	background-color: #F0B851;
+	font-family: 'ABeeZee', sans-serif;
+	padding-top: 10px;
+}
+/*párrafos genéricos y colores de textos y fondo de todas las páginas*/
+p{
+	color: black;
+	font-size: 1.2rem;
+	background-color: #F0B851;
+}
+		span{
+			letter-spacing: 0.1rem;
+		}
+.grey{
+	color: grey;
+}
+.black{
+	color:black;
+}
+.orange{
+	color:#F97307;
+}
+.backgroundBlue{
+	background-color: #A8CAE9;
+}
+.backgroundOrange{
+	background-color: #F0B851;
+}
+.backgroundWhite{
+	background-color: white;
+}
+.backgorundPink{
+	background-color: #EDB5B5;
+}
+.backgroundLightblue{
+	background-color: #A3AECF;
+}
+
+.lightorange{
+	background-color: #F0B851;
+}
+/*letras itálicas, negritas y google font genéricas*/
+.italicLetter{
+	font-style: italic;
+}
+.fontFamily{
+	font-family: 'ABeeZee', sans-serif;
+}
+.boldLetter{
+	font-weight: bold;
+}
+/*ubicación central de texto general*/
+.textAline{
+	text-align: center;
+}
+/*MAYÚSCULAS GENERAL*/
+.textMay{
+	text-transform: uppercase;
+}
+/*footer genérico*/
+footer{
+	background-color: #F6B26B;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*APLICO GRIDS*/
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 11vh 0.5vh 60vh 15vh 290vh 45vh 25vh;
+	grid-template-areas: "logo" "nav" "header" "favourite" "favouritepics" "people" "pie"
+}
+#logoSection{
+	grid-area: logo;
+}
+#nav{
+	grid-area: nav;
+}
+#header{
+	grid-area: header;
+}
+#favourite{
+	grid-area: favourite;
+}
+#favouritepics{
+	grid-area: favouritepics;
+}
+#titleNice{
+	grid-area: people;
+}
+#pie{
+	grid-area: pie;
+}
+
+@media only screen and (min-width: 768px){
+	.container{
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 12vh 0.5vh 60vh 15vh 290vh 25vh;
+		grid-template-areas: "logo logo" "nav nav" "header header" "favourite people" "favouritepics people" "pie pie"
+	}
+	#header{
+	margin-top: 45px;
+	margin-bottom: 15px;
+	}
+	.sizeSection {
+		margin-top: 10px;
+		width: 53.7vh;
+	}
+
+	.sizeComents{
+	background-color: #F0B851;
+	margin-top:10px; 
+	margin-right: 20px; 
+	height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+	.container{
+		grid-template-columns: repeat(3, 1fr) ;
+		grid-template-rows: 12vh 0.5vh 60vh 15vh 290vh 45vh 25vh;
+		grid-template-areas: "logo logo logo" "nav nav nav" "header header header" "favourite favourite favourite" "favouritepics favouritepics favouritepics" "people people people" "pie pie pie"
+	}
+	.sizeSection {
+		margin-top: 10px;
+		width: 97%;
+	}
+
+	.sizeComents{
+	background-color: #F0B851;
+	margin-top:10px; 
+	margin-right: 30px;
+	margin-left: 30px; 
+	height: 50vh;
+    }
+}

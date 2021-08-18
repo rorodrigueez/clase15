@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desing web page.</title>
+	<link rel="stylesheet" href="css/sheet.css">
+</head>
+<body>
+	<div class="grid grid-template-area">
+<!-- comienza una sección con el logo -->
+		<section class="yellow" id="logoSection">
+			<a href="index.html">
+				<img src="img/logomystudio.jpg" alt="My studio logo">
+			</a>
+		</section>
+	<!-- comienza la botonera -->
+		<nav id="buttoner5">
+			<ul class="backgroundWhite" >
+				<li class="backgroundWhite">
+					<a href="index.html" class="black">
+						Home
+					</a>
+				</li>
+				<li class="backgroundWhite">
+					<a href="about.html" class="black backdroundWhite">
+						About
+					</a>
+				</li>
+				<li class="backgroundWhite">
+					<a href="howtouse.html" class="black">
+						How to use?
+					</a>
+				</li>
+				<li class="backgroundWhite">
+					<a href="shop.html" class="black">
+					    Shop
+				</a>
+				</li>
+				<li class="backgroundWhite">
+					<a href="contact.html" class="black">
+					    Contact
+					</a>
+				</li>
+			</ul>
+		</nav>		
+	<!-- comienza un encabezado con el título principal -->
+		<header class="backgroundOrange" id="titlecontact">
+		<section>
+			<article><h2>Let´s get to talking!</h2><h3 id="subtitlecontact"> and start creating the website of your dreams!</h3>
+			</article>
+		</section>
+		</header>
+	<!-- comienza una sección con el formulario de contacto -->
+		<section id="letstalk" class="backgroundOrange">
+			<article>
+				<h3 class="black">let´s talk!:</h3>
+				<form action="envio.php" method="post" class="designForm">
+					<fieldset>
+						<legend>Personal Info</legend>
+							<label for="full_name">Full name:</label>
+							<input type="text" name="full_name" placeholder= Rocío><br>
+							<label for="email">E-mail:</label>
+							<input type="email" name="email" placeholder="mail@algo.com"><br>
+							<label for="phonenumer">Phone number:</label>
+							<input type="number" name="phonenumer" placeholder="3571511383"><br>
+			        </fieldset>
+			        <fieldset>
+			        	<legend>Knowledge</legend>
+				        	<label for=""> Máster Web Design</label>
+				        	<input type="checkbox" name="WD" value="WD">
+				        	<label for="">Adobe Photoshop</label>
+				        	<input type="checkbox" name="AP" value="AP">
+				        	<label for="">Some ideas</label>
+				        	<input type="checkbox" name="SI" value="SI">
+				        	<label for="">Beginner</label>
+				        	<input type="checkbox" name="B" value="B">
+				        	<label for="">Adobe Ilustrator</label>
+				        	<input type="checkbox" name="AI" value="AI">
+			        </fieldset>
+			        <fieldset>
+			        	<legend>Sex</legend>
+				        	<label for="">Woman</label>
+				        	<input type="radio" name="sex" value="W">
+				        	<label for="">Man</label>
+				        	<input type="radio" name="sex" value="M">
+				        	<label for="">Other</label>
+				        	<input type="radio" name="sex" value="O">
+			        </fieldset>
+			        <fieldset>
+			        	<legend>How did you hear about us?</legend>
+			        	    <label for="">I hear by:</label>
+			        	    <select name="socialmedia" id="">
+			        	    	<option value="facebook">Facebook</option>
+			        	    	<option value="instagram">Instagram</option>
+			        	    	<option value="other">Other</option>
+			        	    </select>
+			        </fieldset>
+			        <fieldset>
+			        	<legend>Type of project</legend>
+			        	    <label for="">What type of project are you looking for?</label>
+			        	    <select name="project" id="">
+			        	    	<option value="branding">Branding</option>
+			        	    	<option value="consult">Consult</option>
+			        	    	<option value="other">Other</option>
+			        	    </select>
+			        	    <br>
+			        	    <label>Tell me about this project</label>
+			        	    <textarea name="" id="" cols="20" rows="20" placeholder="What do i need to know about the project?"></textarea>
+			        	    <br><br>
+			        	    <input type="reset" value="Cancel" class="designForm">
+			        	    <input type="submit" value="Send">
+			        </fieldset>
+				</form>
+		</article>
+		</section>
+		<!-- comienza el footer con links, imágenes y demás -->
+		<footer class="lightorange" id="pie" > 
+			<section>
+			    <article>
+					    <a href="https://www.facebook.com/?stype=lo&jlou=Afcl-kFpDgQsr9R3DIHM4b81_xoKnkN9NC18vBJST-v9CFzuhXifOKiYjIWo4-ifnNoCp-HBIRECauUmCQ924PQU&smuh=10683&lh=Ac-go5jphp-zTlfROe0">
+						    <img src="img/facebook.png" alt="follow us in facebook">
+					    </a>
+					    <a href="https://www.instagram.com/?hl=es">
+						    <img src="img/instagram.png" alt="follow us in instagram">
+					    </a>
+					    <a href="https://ar.pinterest.com/">
+						    <img src="img/pinterest.png" alt="follow us in pinterest">
+					    </a>
+					    <a href="https://twitter.com/?lang=es">
+						    <img src="img/twitter.png" alt="follow us in twitter">
+					    </a>
+			                <h5 class="italicLetter boldLetter fontFamily">A site designed by Mystudioweb-all rights reserved</h5>
+			                <h6 class="italicLetter">(obiously)</h6>
+		        </article>
+		    </section>
+		</footer>    
+</div>
+</body>
+</html>
